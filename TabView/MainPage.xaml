@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabView.MainPage"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView">
+
+    <Grid VerticalOptions="FillAndExpand">
+        <tabView:SfTabView x:Name="tabview">
+            <tabView:SfTabItem ImageSize="50" ImageSource="jackson.png">
+                <StackLayout Padding="10">
+                    <Label Text="Welcome, Jackson!" 
+                       FontSize="18" 
+                       HorizontalOptions="Center" />
+                    <Label Text="Here is your profile information." 
+                       FontSize="14" 
+                       HorizontalOptions="Center" />
+                </StackLayout>
+            </tabView:SfTabItem>
+
+            <tabView:SfTabItem ImageSize="50" ImageSource="liam.png">
+                <StackLayout Padding="10">
+                    <Label Text="Welcome, Liam!" 
+                       FontSize="18" 
+                       HorizontalOptions="Center" />
+                    <Label Text="Here is your profile information." 
+                       FontSize="14" 
+                       HorizontalOptions="Center" />
+                </StackLayout>
+            </tabView:SfTabItem>
+
+            <tabView:SfTabItem ImageSize="50" ImageSource="lita.png">
+                <StackLayout Padding="10">
+                    <Label Text="Welcome, Lita!" 
+                       FontSize="18" 
+                       HorizontalOptions="Center" />
+                    <Label Text="Here is your profile information." 
+                       FontSize="14" 
+                       HorizontalOptions="Center" />
+                </StackLayout>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </Grid>
+</ContentPage>
