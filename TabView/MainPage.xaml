@@ -5,8 +5,8 @@
              xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView">
 
     <Grid VerticalOptions="FillAndExpand">
-        <tabView:SfTabView x:Name="tabview">
-            <tabView:SfTabItem ImageSize="50" ImageSource="jackson.png">
+        <tabView:SfTabView x:Name="tabview" TabBarHeight="100">
+            <tabView:SfTabItem ImageSize="50" Header="Jackson" ImageSource="jackson.png">
                 <StackLayout Padding="10">
                     <Label Text="Welcome, Jackson!" 
                        FontSize="18" 
@@ -17,7 +17,7 @@
                 </StackLayout>
             </tabView:SfTabItem>
 
-            <tabView:SfTabItem ImageSize="50" ImageSource="liam.png">
+            <tabView:SfTabItem ImageSize="50" Header="Liam" ImageSource="liam.png">
                 <StackLayout Padding="10">
                     <Label Text="Welcome, Liam!" 
                        FontSize="18" 
@@ -28,7 +28,7 @@
                 </StackLayout>
             </tabView:SfTabItem>
 
-            <tabView:SfTabItem ImageSize="50" ImageSource="lita.png">
+            <tabView:SfTabItem ImageSize="50" Header="Lita" ImageSource="lita.png">
                 <StackLayout Padding="10">
                     <Label Text="Welcome, Lita!" 
                        FontSize="18" 
