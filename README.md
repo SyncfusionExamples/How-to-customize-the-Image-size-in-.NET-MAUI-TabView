@@ -10,9 +10,31 @@ The following code example illustrate how to Customize ImageSize in SfTabView.
 ### XAML
 
 ```
-    <tabView:SfTabView>
-    <tabView:SfTabItem ImageSize="50"/>
-    </tabView:SfTabView> 
+     <Grid VerticalOptions="FillAndExpand">
+     <tabView:SfTabView x:Name="tabview">
+         <tabView:SfTabItem ImageSize="50" ImageSource="jackson.png">
+             <StackLayout Padding="10">
+                 <Label Text="Welcome, Jackson!" 
+                    FontSize="18" 
+                    HorizontalOptions="Center" />
+                 <Label Text="Here is your profile information." 
+                    FontSize="14" 
+                    HorizontalOptions="Center" />
+             </StackLayout>
+         </tabView:SfTabItem>
+
+         <tabView:SfTabItem ImageSize="50" ImageSource="liam.png">
+             <StackLayout Padding="10">
+                 <Label Text="Welcome, Liam!" 
+                    FontSize="18" 
+                    HorizontalOptions="Center" />
+                 <Label Text="Here is your profile information." 
+                    FontSize="14" 
+                    HorizontalOptions="Center" />
+             </StackLayout>
+        </tabView:SfTabItem>
+     </tabView:SfTabView>
+     </Grid>
 ```
 
 ### C#
